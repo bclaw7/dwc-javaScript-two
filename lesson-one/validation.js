@@ -1,9 +1,7 @@
 export function convertToNumber(userString) {
-let num = parseFloat(userString);
-if(num) {
-    return num;
-} else {
-    return "Please enter a number."
-}
-}
+    if(isNaN(userString) || userString === "") {
+        return null;
+    } else {
+        return parseFloat(userString);
+    }
 }
