@@ -5,9 +5,9 @@ document.querySelector('#circumferenceButton').onclick = submitFunction;
 document.querySelector('#areaButton').onclick = submitAreaFunction;
 
 function submitFunction() {
-    let UserRadius = convertToNumber(document.getElementById("radiusCircumference").value);
+    let userRadius = convertToNumber(document.getElementById("radiusCircumference").value);
     let outputElement = document.getElementById('outputCircumference');
-    if(UserRadius) {
+    if(userRadius) {
         let circumference = calculateCircumference(userRadius)
         outputElement.innerHTML = 'The circumference is ${circumference}.';
     } else {
